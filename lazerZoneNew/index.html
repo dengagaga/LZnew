@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Lazer Zone</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_top">
+            <img src="img/logo.png" alt="">
+            <div class="modal_top-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 17.5L6 6" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 17.5L17.5 6" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+           
+                
+        </div>
+    </div>
+    <header class="header">
+        <svg class="header_svg" xmlns="http://www.w3.org/2000/svg" width="1920" height="651" viewBox="0 0 1920 651" fill="none">
+            <path d="M151.763 1C277.263 194.5 375.263 284.5 219.763 240.5C95.3628 205.3 13.9294 251.167 -11.2373 278.5C-43.2373 319 -78.9372 402.7 34.2628 469.5C175.763 553 691.763 736.5 1040.76 603C1319.96 496.2 1471 220.5 1523.5 168C1619.17 38.3333 1858.5 1 1972.5 134" stroke="#7D7E7F"/>
+        </svg>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <div class="nav_links">
+                    <div class="drop_menu-link">
+                        <a href="" class="nav_link nav_link-hover">Услуги 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                <path d="M14.5833 8.33334L10.4166 12.4167L6.33325 8.33334" stroke="#3A3531" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="drop_menu">
+                            <a href="Lazer.html" class="nav_link">Лазерная эпиляция</a>
+                            <a href="Rsl.html" class="nav_link">RSL-массаж</a>
+                            <a href="Lpg.html" class="nav_link">LPG-массаж</a>
+                        </div>
+                    </div>
+                    
+                    <a href="" class="nav_link">Прайс</a>
+                    <a href="https://vk.com/uslugi-166417195?screen=group" target="_blank" class="nav_link">Акции</a>
+                    <a href="https://vk.com/laserzone" target="_blank" class="nav_link">Новости</a>
+                </div>
+                <div class="nav_btns">
+                    <a href="#" class="nav_btn nav_btn-location"><img src="img/location.png" alt=""></a>
+                    <a href="tel:79027716974" class="nav_btn"><img src="img/phone.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="header_all">
+                <div class="header_all-left">
+                    <h1 class="title-1">Laser Zone</h1>
+                    <p class="text_grey">Первая студия лазерной эпиляции в Петрозаводске с 2018 года</p>
+                    <a href="https://api.whatsapp.com/send/?phone=79027716974" class="header_all-left-btn">Написать в WhatsApp
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.05 4.90999C18.1331 3.9841 17.0411 3.24996 15.8376 2.75036C14.634 2.25075 13.3431 1.99568 12.04 1.99999C6.58005 1.99999 2.13005 6.44999 2.13005 11.91C2.13005 13.66 2.59005 15.36 3.45005 16.86L2.05005 22L7.30005 20.62C8.75005 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.9501 17.38 21.9501 11.92C21.9501 9.26999 20.92 6.77999 19.05 4.90999ZM12.04 20.15C10.56 20.15 9.11005 19.75 7.84005 19L7.54005 18.82L4.42005 19.64L5.25005 16.6L5.05005 16.29C4.2276 14.9771 3.79097 13.4593 3.79005 11.91C3.79005 7.36999 7.49005 3.66999 12.03 3.66999C14.23 3.66999 16.3 4.52999 17.85 6.08999C18.6177 6.85386 19.226 7.76254 19.6397 8.76332C20.0534 9.76411 20.2642 10.8371 20.26 11.92C20.2801 16.46 16.58 20.15 12.04 20.15ZM16.56 13.99C16.31 13.87 15.09 13.27 14.87 13.18C14.64 13.1 14.48 13.06 14.31 13.3C14.14 13.55 13.67 14.11 13.53 14.27C13.39 14.44 13.24 14.46 12.99 14.33C12.74 14.21 11.94 13.94 11 13.1C10.26 12.44 9.77005 11.63 9.62005 11.38C9.48005 11.13 9.60005 11 9.73005 10.87C9.84005 10.76 9.98005 10.58 10.1 10.44C10.22 10.3 10.27 10.19 10.35 10.03C10.43 9.85999 10.39 9.71999 10.33 9.59999C10.27 9.47999 9.77005 8.25999 9.57005 7.75999C9.37005 7.27999 9.16005 7.33999 9.01005 7.32999H8.53005C8.36005 7.32999 8.10005 7.38999 7.87005 7.63999C7.65005 7.88999 7.01005 8.48999 7.01005 9.70999C7.01005 10.93 7.90005 12.11 8.02005 12.27C8.14005 12.44 9.77005 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.69 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.03 14.27C16.96 14.16 16.81 14.11 16.56 13.99Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header_all-right">
+                    <img src="img/fonOne.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_bot">
+                <div class="header_bot-left">
+                    <span>99%</span>
+                </div>
+                <div class="header_bot-right">
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#F0AB5D"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#F0AB5D"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#F0AB5D"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#F0AB5D"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#F0AB5D"/>
+                        </svg>
+                    </div>
+                    <p class="header_bot-right-text">положительных отзывов</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="services">
+                <div class="services_item services_item-one">
+                    <div class="services_item-left">
+                        <img src="img/fonTwo.png" alt="">
+                    </div>
+                    <div class="services_item-right">
+                        <div class="services_item-right-top">
+                            <div class="title-3">Лазерная эпиляция</div>
+                        <span class="services_item-right-span">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 12C3 7 7 3 12 3C17 3 21 7 21 12C21 17 17 21 12 21C7 21 3 17 3 12Z" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12V7" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12L15.5 15.5" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            60 минут
+                        </span>
+                        <ul class="services_item-right-list">
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Быстрое и безопасное удаление волос
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Долговременный результат без боли
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Современные аппараты
+                                </p>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="services_item-right-bot">
+                            <div class="services_item-right-bot-top">
+                                <div class="services_item-right-bot-left">
+                                    <h5 class="services_item-right-bot-left-title">2 490 ₽*</h5>
+                                    <span class="services_item-right-bot-left-span">
+                                       <del>4 290 ₽</del> 
+                                    </span>
+                                </div>
+                                <button class="services_item-right-bot-left-btn">Подробнее</button>
+                            </div>
+                            <p class="services_item-right-bot-grey">*Комплекс Classic (подмышки, тотал бикини и голени)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item services_item-two">
+                    <div class="services_item-left">
+                        <img src="img/fonThree.png" alt="">
+                    </div>
+                    <div class="services_item-right">
+                        <div class="services_item-right-top">
+                            <div class="title-3">RSL-МАССАЖ ТЕЛА</div>
+                        <span class="services_item-right-span">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 12C3 7 7 3 12 3C17 3 21 7 21 12C21 17 17 21 12 21C7 21 3 17 3 12Z" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12V7" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12L15.5 15.5" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            60 минут
+                        </span>
+                        <ul class="services_item-right-list">
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Уменьшение объёмов (до минус 2-х размеров в одежде)
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Ровная кожа с устранением целлюлита на любой стадии
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Снятие отёчности
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Push-up эффект ягодиц
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Тотальное расслабление
+                                </p>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="services_item-right-bot">
+                            <div class="services_item-right-bot-top">
+                                <div class="services_item-right-bot-left">
+                                    <h5 class="services_item-right-bot-left-title">2  990 ₽*</h5>
+                                    <span class="services_item-right-bot-left-span">
+                                       <del>4 990 ₽</del> 
+                                    </span>
+                                </div>
+                                <button class="services_item-right-bot-left-btn">Подробнее</button>
+                            </div>
+                            <p class="services_item-right-bot-grey">*Комплекс Classic (подмышки, тотал бикини и голени)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item services_item-three">
+                    <div class="services_item-left">
+                        <img src="img/fonFour.png" alt="">
+                    </div>
+                    <div class="services_item-right">
+                        <div class="services_item-right-top">
+                            <div class="title-3">LPG-массаж</div>
+                        <span class="services_item-right-span">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 12C3 7 7 3 12 3C17 3 21 7 21 12C21 17 17 21 12 21C7 21 3 17 3 12Z" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12V7" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12L15.5 15.5" stroke="#3A3531" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            60 минут
+                        </span>
+                        <ul class="services_item-right-list">
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Моделирование фигуры
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Снятие отёчности
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Повышение тонуса и упругости кожи
+                                </p>
+                            </li>
+                            <li class="services_item-right-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M14.0825 21.7107L22.6105 13.1827L21.6665 12.2387L14.0825 19.8227L10.2825 16.0227L9.33854 16.9667L14.0825 21.7107ZM16.0039 28.5C14.3452 28.5 12.7852 28.1853 11.3239 27.556C9.86343 26.9258 8.59277 26.0707 7.51188 24.9907C6.43099 23.9107 5.57543 22.6413 4.94521 21.1827C4.31499 19.724 3.99988 18.1644 3.99988 16.504C3.99988 14.8436 4.31499 13.2836 4.94521 11.824C5.57454 10.3636 6.42832 9.09289 7.50654 8.012C8.58477 6.93111 9.85455 6.07556 11.3159 5.44533C12.7772 4.81511 14.3372 4.5 15.9959 4.5C17.6545 4.5 19.2145 4.81511 20.6759 5.44533C22.1363 6.07467 23.407 6.92889 24.4879 8.008C25.5688 9.08711 26.4243 10.3569 27.0545 11.8173C27.6848 13.2778 27.9999 14.8373 27.9999 16.496C27.9999 18.1547 27.6852 19.7147 27.0559 21.176C26.4265 22.6373 25.5714 23.908 24.4905 24.988C23.4097 26.068 22.1403 26.9236 20.6825 27.5547C19.2248 28.1858 17.6652 28.5009 16.0039 28.5Z" fill="#4F7A28"/>
+                                </svg>
+                                <p class="text_black">
+                                    Улучшение кровообращения и обмена веществ
+                                </p>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="services_item-right-bot">
+                            <div class="services_item-right-bot-top">
+                                <div class="services_item-right-bot-left">
+                                    <h5 class="services_item-right-bot-left-title">555 ₽*</h5>
+                                    <span class="services_item-right-bot-left-span">
+                                       <del>1 670 ₽</del> 
+                                    </span>
+                                </div>
+                                <button class="services_item-right-bot-left-btn">Подробнее</button>
+                            </div>
+                            <p class="services_item-right-bot-grey">*Комплекс Classic (подмышки, тотал бикини и голени)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="choose">
+            <div class="container">
+                <h2 class="title-2">Почему нас выбирают?</h2>
+                <p class="text_black">Laser Zone — это студии лазерной эпиляции и аппаратного массажа комфорт-класса, полностью предназначенная для гладкости, стройности вашего тела и уверенности в себе</p>
+                <div class="choose_list">
+                    <div class="choose_item">
+                        <img src="img/ChooseOne.png" alt="">
+                        <p class="text_black choose_item-text">50 000+ успешных процедур</p>
+                        <p class="choose_item-text-2">с использованием аппаратов нового поколения</p>
+                    </div>
+                    <div class="choose_item">
+                        <img src="img/ChooseTwo.png" alt="">
+                        <p class="text_black choose_item-text">99% положительных отзывов</p>
+                        <p class="choose_item-text-2">от довольных клиентов</p>
+                    </div>
+                    <div class="choose_item">
+                        <img src="img/ChooseThree.png" alt="">
+                        <p class="text_black choose_item-text">Кабинеты комфорт-класса</p>
+                        <p class="choose_item-text-2">с современным оборудованием</p>
+                    </div>
+                    <div class="choose_item">
+                        <img src="img/ChooseFour.png" alt="">
+                        <p class="text_black choose_item-text">Специалисты с мед.образованием</p>
+                        <p class="choose_item-text-2">будут ждать вас на Попова и Анохина</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Reviews">
+            <div class="container">
+                <h2 class="title-2">Что говорят о Laser Zone</h2>
+                <div class="Reviews_top">
+                    <div class="Reviews_top-left">
+                        <h5 class="Reviews_top-left-title">5,0 из 5</h5>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L14.1 9.6L21 9.5L15.4 13.6L17.6 20.1L12 16L6.4 20.1L8.6 13.6L3 9.5L9.9 9.6L12 3Z" fill="#EBC745"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L14.1 9.6L21 9.5L15.4 13.6L17.6 20.1L12 16L6.4 20.1L8.6 13.6L3 9.5L9.9 9.6L12 3Z" fill="#EBC745"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L14.1 9.6L21 9.5L15.4 13.6L17.6 20.1L12 16L6.4 20.1L8.6 13.6L3 9.5L9.9 9.6L12 3Z" fill="#EBC745"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L14.1 9.6L21 9.5L15.4 13.6L17.6 20.1L12 16L6.4 20.1L8.6 13.6L3 9.5L9.9 9.6L12 3Z" fill="#EBC745"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L14.1 9.6L21 9.5L15.4 13.6L17.6 20.1L12 16L6.4 20.1L8.6 13.6L3 9.5L9.9 9.6L12 3Z" fill="#EBC745"/>
+                            </svg>
+                        </div>
+                        <p class="Reviews_top-left-text">На основе 130 оценок</p>
+                    </div>
+                    <div class="Reviews_top-right">
+                        <div class="Reviews_top-right-left">
+                            <img src="img/twoGis.png" alt="">
+                            <p class="Reviews_top-right-text">5,0</p> <span class="Reviews_top-right-span">/5</span>
+                        </div>
+                        <div class="Reviews_top-right-right">
+                            <img src="img/yandex.png" alt="">
+                            <p class="Reviews_top-right-text">5,0</p> <span class="Reviews_top-right-span">/5</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper swiper-wrapper-Reviews">
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                        <div class="swiper-slide Reviews_item">
+                            <div class="Reviews_item-top">
+                                <div class="Reviews_item-top-left">
+                                    <img src="img/logoLazer.png" alt="">
+                                    <div class="Reviews_item-top-left-all">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2L9.4 6.4L14 6.33333L10.2667 9.06667L11.7333 13.4L8 10.6667L4.26667 13.4L5.73333 9.06667L2 6.33333L6.6 6.4L8 2Z" fill="#EBC745"/>
+                                            </svg>
+                                        </div>
+                                        <p class="Reviews_item-top-left-all-text">4,1</p>
+                                    </div>
+                                </div>
+                                <div class="Reviews_item-top-right">
+                                    <img src="img/rsl.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="Reviews_item-mid">
+                                <p class="Reviews_item-mid-text">Все понравилось: комфортно, быстро, доступно объясняют, не больно:) Жду результатов, так как ходила только второй раз. Обязательно вернусь и не раз!</p>
+                            </div>
+                            <button class="Reviews_item-btn">Развернуть</button>
+                        </div>
+                    </div>
+                    <div class="swiper-but-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 17L3 12L8 7" stroke="#7D7E7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12L3 12" stroke="#7D7E7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-but-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 7L21 12L16 17" stroke="#7D7E7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 12L21 12" stroke="#7D7E7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-scrollbar swiper-scrollbar-Reviews"></div>
+                    <div class="swiper-pagination Reviews-pagination"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="galery">
+            <div class="container">
+                <h2 class="title-2">Наша студия</h2>
+                <div class="galery_top">
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" checked id="color-1" name="color" value="indigo">
+                        <label for="color-1">ул. Попова, 13А</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="color-2" name="color" value="indigo">
+                        <label for="color-2">ул. Анохина, 12</label>
+                    </div>
+                </div>
+                <div class="galery_bot">
+                    <div class="img-studia-all studia-block">  
+                        <a href="img/img1.png" data-fancybox="images" data-caption="" class="img-studia-item"> <img src="img/img1.png" alt=""/></a>
+                        <a href="img/img2.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img2.png" alt=""/></a>
+                        <a href="img/img3.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img3.png" alt=""/></a>
+                        <a href="img/img4.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img4.png" alt=""/></a>
+                        <a href="img/img5.png" data-fancybox="images" data-caption="" class="img-studia-item img-studia-item-five"><img src="img/img5.png" alt=""/></a>
+                        <a href="img/img6.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img6.png" alt=""/></a> 
+                    </div>
+                    <div class=" studia-block img-studia-all-2 studia-block-none">  
+                        <a href="img/img7.png" data-fancybox="images" data-caption="" class="img-studia-item"> <img src="img/img7.png" alt=""/></a>
+                        <a href="img/img8.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img8.png" alt=""/></a>
+                        <a href="img/img9.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img9.png" alt=""/></a>
+                        <a href="img/img10.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img10.png" alt=""/></a>
+                        <a href="img/img11.png" data-fancybox="images" data-caption="" class="img-studia-item img-studia-item-five"><img src="img/img11.png" alt=""/></a>
+                        <a href="img/img12.png" data-fancybox="images" data-caption="" class="img-studia-item"><img src="img/img12.png" alt=""/></a> 
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_all">
+                <div class="footer_all-top">
+                    <a href="index.html">
+                        <img src="img/logo2.png" alt="">
+                    </a>
+                </div>
+                <div class="footer_all-mid">
+                    <div class="footer_all-mid-left">
+                        <a href=""    class="footer_all-mid-left-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7.3276 3.01517C8.13096 2.91542 9.03474 3.3144 9.43642 4.01262L9.93852 4.91032C10.4406 5.80802 10.1394 6.80547 9.43642 7.40394L8.8339 7.80292C8.03054 8.50113 7.72928 9.59832 8.3318 10.496C9.03474 11.4935 9.73768 12.4909 10.6415 13.3886C11.5452 14.2863 12.5494 15.0843 13.5536 15.6828C14.4574 16.2812 15.562 15.982 16.1646 15.184L16.5662 14.6853C17.1688 13.8873 18.2734 13.6879 19.0767 14.1866L19.9805 14.6853C20.6835 15.0843 21.0851 15.8822 20.9847 16.7799L20.6835 18.3759L20.4826 19.3733C20.2818 20.3708 19.2776 21.1687 18.2734 20.9692C16.3654 20.7697 14.5578 20.1713 12.8507 19.3733C11.0431 18.5754 9.43642 17.3784 7.93012 15.982C6.42382 14.5856 5.3192 12.8899 4.51584 11.0945C3.8129 9.39883 3.21038 7.50368 3.00954 5.60853C2.90912 4.61108 3.61206 3.61364 4.61626 3.41415L7.3276 3.01517Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            +7 902 771-69-74
+                        </a>
+                       
+                        <div class="footer_all-svgs">
+                            <a href="https://vk.com/laserzone">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <rect y="0.147461" width="39.7048" height="39.7082" rx="19.8524" fill="#3A3531"/>
+                                    <path d="M20.8277 26.9506C13.3666 26.9506 9.11091 21.7337 8.93359 13.0527H12.671C12.7937 19.4243 15.549 22.1232 17.7314 22.6797V13.0527H21.2505V18.5479C23.4056 18.3114 25.6699 15.8073 26.4337 13.0527H29.9528C29.665 14.4813 29.0912 15.8339 28.2675 17.026C27.4437 18.2181 26.3876 19.224 25.1652 19.9808C26.5296 20.6723 27.7348 21.651 28.7011 22.8525C29.6675 24.0539 30.373 25.4506 30.7712 26.9506H26.8975C26.54 25.6478 25.8135 24.4815 24.809 23.5981C23.8044 22.7146 22.5666 22.1531 21.2505 21.9841V26.9506H20.8277Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                    <path d="M14.7047 10.3565C12.6977 10.3565 11.0598 11.9944 11.0598 14.0014C11.0598 16.0084 12.6977 17.6463 14.7047 17.6463C16.7118 17.6463 18.3496 16.0084 18.3496 14.0014C18.3496 11.9944 16.7118 10.3565 14.7047 10.3565ZM25.6367 14.0014C25.6367 12.492 25.6504 10.9963 25.5657 9.48968C25.4809 7.73968 25.0817 6.18656 23.802 4.90687C22.5196 3.62445 20.9692 3.22796 19.2192 3.1432C17.7098 3.05843 16.2141 3.0721 14.7075 3.0721C13.1981 3.0721 11.7024 3.05843 10.1957 3.1432C8.44573 3.22796 6.89261 3.62718 5.61292 4.90687C4.3305 6.18929 3.93402 7.73968 3.84925 9.48968C3.76449 10.9991 3.77816 12.4948 3.77816 14.0014C3.77816 15.508 3.76449 17.0065 3.84925 18.5131C3.93402 20.2631 4.33324 21.8162 5.61292 23.0959C6.89534 24.3784 8.44573 24.7748 10.1957 24.8596C11.7051 24.9444 13.2008 24.9307 14.7075 24.9307C16.2168 24.9307 17.7125 24.9444 19.2192 24.8596C20.9692 24.7748 22.5223 24.3756 23.802 23.0959C25.0844 21.8135 25.4809 20.2631 25.5657 18.5131C25.6532 17.0065 25.6367 15.5108 25.6367 14.0014ZM14.7047 19.6096C11.6012 19.6096 9.09652 17.1049 9.09652 14.0014C9.09652 10.8979 11.6012 8.3932 14.7047 8.3932C17.8082 8.3932 20.3129 10.8979 20.3129 14.0014C20.3129 17.1049 17.8082 19.6096 14.7047 19.6096ZM20.5426 9.47327C19.818 9.47327 19.2328 8.88812 19.2328 8.16351C19.2328 7.4389 19.818 6.85374 20.5426 6.85374C21.2672 6.85374 21.8524 7.4389 21.8524 8.16351C21.8526 8.33557 21.8189 8.50598 21.7531 8.66499C21.6874 8.824 21.5909 8.96847 21.4692 9.09013C21.3476 9.2118 21.2031 9.30827 21.0441 9.37401C20.8851 9.43976 20.7147 9.47349 20.5426 9.47327Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                    <rect x="0.704834" y="0.147461" width="39.7048" height="39.7082" rx="19.8524" fill="#3A3531"/>
+                                    <path d="M28.4256 12.1222C26.4646 10.1678 23.8499 9.08203 21.0899 9.08203C15.3521 9.08203 10.7037 13.7147 10.7037 19.433C10.7037 21.2427 11.2121 23.0523 12.0837 24.5724L10.6311 29.9288L16.151 28.4811C17.6763 29.2774 19.3468 29.7117 21.0899 29.7117C26.8278 29.7117 31.4761 25.0791 31.4761 19.3607C31.4035 16.6824 30.3867 14.0766 28.4256 12.1222ZM26.1014 23.1247C25.8836 23.7037 24.8667 24.2828 24.3583 24.3552C23.9225 24.4276 23.3415 24.4276 22.7604 24.2828C22.3973 24.138 21.8889 23.9933 21.3078 23.7037C18.6931 22.618 17.0226 20.0121 16.8773 19.795C16.7321 19.6502 15.7879 18.4197 15.7879 17.1167C15.7879 15.8138 16.4416 15.2347 16.6595 14.9452C16.8773 14.6557 17.1679 14.6557 17.3858 14.6557C17.531 14.6557 17.7489 14.6557 17.8942 14.6557C18.0394 14.6557 18.2573 14.5833 18.4752 15.09C18.6931 15.5967 19.2015 16.8996 19.2742 16.972C19.3468 17.1167 19.3468 17.2615 19.2742 17.4063C19.2015 17.551 19.1289 17.6958 18.9836 17.8406C18.8384 17.9853 18.6931 18.2025 18.6205 18.2749C18.4752 18.4197 18.33 18.5644 18.4752 18.7816C18.6205 19.0711 19.1289 19.8673 19.9278 20.5912C20.9447 21.4598 21.7436 21.7494 22.0341 21.8941C22.3246 22.0389 22.4699 21.9665 22.6152 21.8217C22.7604 21.677 23.2689 21.0979 23.4141 20.8084C23.5594 20.5188 23.7773 20.5912 23.9952 20.6636C24.213 20.736 25.5204 21.3874 25.7383 21.5322C26.0288 21.677 26.1741 21.7494 26.2467 21.8217C26.3193 22.0389 26.3193 22.5456 26.1014 23.1247Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                    <rect x="0.409668" width="40" height="40.0034" rx="20" fill="#3A3531"/>
+                                    <path d="M28.4097 12.6033L25.4042 28.2946C25.4042 28.2946 24.9837 29.3826 23.8286 28.8608L16.8942 23.3545L16.8621 23.3383C17.7988 22.4673 25.0621 15.704 25.3795 15.3974C25.8709 14.9226 25.5659 14.6399 24.9953 14.9986L14.2665 22.0548L10.1273 20.6125C10.1273 20.6125 9.47593 20.3725 9.41326 19.8507C9.34977 19.3281 10.1487 19.0455 10.1487 19.0455L27.0228 12.1899C27.0228 12.1899 28.4097 11.5589 28.4097 12.6033Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="documents">
+                            <a href="" class="footer_all-bot-text">Документы</a>
+                            <a href="" class="footer_all-mid-link">Политика <br> конфиденциальности</a>
+                        </div>
+                       
+                    </div>
+                    <div class="footer_all-mid-mid">
+                        <ul class="footer_all-mid-list">
+                            <li class="footer_all-mid-item">
+                                <a href="" class="footer_all-mid-link">Услуги</a>
+                            </li>
+                            <li class="footer_all-mid-item">
+                                <a href="" class="footer_all-mid-link">Прайс</a>
+                            </li>
+                            <li class="footer_all-mid-item">
+
+                                <a href="https://vk.com/uslugi-166417195?screen=group" class="footer_all-mid-link">Акции</a>
+                            </li>
+                            <li class="footer_all-mid-item">
+
+                                <a href="" class="footer_all-mid-link">Франшиза</a>
+                            </li>
+                            <li class="footer_all-mid-item">
+                                <a href="https://vk.com/laserzone" class="footer_all-mid-link">Новости</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer_all-mid-right">
+                        <p class="footer_all-mid-right-title">Наши адреса</p>
+                        <p class="footer_all-mid-right-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12.0449 20.9999L6.74495 15.6999C3.84495 12.7999 3.84495 8.0999 6.74495 5.1999C9.64495 2.2999 14.3449 2.2999 17.2449 5.1999C20.1449 8.0999 20.1449 12.7999 17.2449 15.6999L12.0449 20.9999Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.045 13.5C10.365 13.5 9.04504 12.18 9.04504 10.5C9.04504 8.82 10.365 7.5 12.045 7.5C13.605 7.5 15.045 8.82 15.045 10.5C15.045 12.18 13.605 13.5 12.045 13.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            ул. Попова 13а (Древлянка)</p>
+                        <p class="footer_all-mid-right-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12.0449 20.9999L6.74495 15.6999C3.84495 12.7999 3.84495 8.0999 6.74495 5.1999C9.64495 2.2999 14.3449 2.2999 17.2449 5.1999C20.1449 8.0999 20.1449 12.7999 17.2449 15.6999L12.0449 20.9999Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.045 13.5C10.365 13.5 9.04504 12.18 9.04504 10.5C9.04504 8.82 10.365 7.5 12.045 7.5C13.605 7.5 15.045 8.82 15.045 10.5C15.045 12.18 13.605 13.5 12.045 13.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            ул. Анохина 12 (Центр)</p>
+                        <p class="grey">Приходите с 10:00 до 20:00 без выходных</p>
+                    </div>
+                </div>
+                <div class="footer_all-bot">
+                    <p class="footer_all-bot-text">Made bi Cidgital</p>
+                    <a href="https://cidgital.com/">
+                        <img src="img/logo3.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('', {
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            right: ["close"],
+          },
+        },
+      });    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

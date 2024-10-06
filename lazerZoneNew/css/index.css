@@ -1,0 +1,542 @@
+.header {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header_svg {
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+}
+.header_all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_all-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header_all-left-btn {
+    display: inline-flex;
+    max-width: 275px;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 59px;
+    background:  #4F7A28;
+    color:  #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; 
+}
+.header_all-right {
+    width: 91%;
+}
+.header_all-right img{
+    width: 100%;
+}
+.header_bot  {
+    border-radius: 88px;
+    background: #FFF;
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    max-width: 202px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    gap: 8px;
+    box-shadow: 0px 0px 2px 0px rgba(14, 31, 53, 0.12);
+}
+.header_bot-left span{
+    border-right: 1px solid #7D7E7F;
+    padding-right: 8px;
+    font-family: "El Messiri";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80%;
+}
+.header_bot-right {
+}
+.stars {
+    display: flex;
+    align-self: center;
+}
+.header_bot-right-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+}
+
+/* ------------------  SERVICES ------------------ */
+.services    {
+    margin-top: 80px;
+}
+.services_item {
+    background: #F9F9F9;
+    display: flex;
+    gap: 35px;
+    padding: 40px 40px 24px 40px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.services_item-one {
+    border-radius: 261px 24px 24px 24px;
+}
+.services_item-two   {
+    border-radius: 24px;
+}
+.services_item-three   {
+    border-radius: 24px;
+}
+.services_item-right {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services_item-right-bot {
+}
+.services_item-right-bot-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.services_item-right-bot-left {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+.services_item-right-bot-left-title {
+    color:  #4F7A28;
+    text-align: center;
+    font-family: "El Messiri";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+.services_item-right-bot-left-span {
+    color: #F46A6A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    
+}
+.services_item-right-bot-left-btn {
+    border-radius: 59px;
+    background:  #4F7A28;
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    height: 56px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.services_item-right-bot-grey {
+    margin-top: 16px;
+    color: #7D7E7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.services_item-right-span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 3px;
+    margin-bottom: 46px;
+}
+.services_item-right-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.services_item-right-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.services_item-right-item p{
+    max-width: 269px;
+}
+.services_item-left{
+    width: 53%;
+}
+/* ------------------  /SERVICES ------------------ */
+
+/* ------------------  CHOOSE ------------------ */
+.choose {
+    background: url(../img/fonChose.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 180px;
+}
+.choose_list {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.choose_item {
+    max-width: 255px;
+}
+.choose_item-text {
+    margin-top: 24px;
+    
+    text-align: center;
+}
+.choose_item-text-2 {
+    color:  #7D7E7F;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 9px;
+}
+/* ------------------  /CHOOSE ------------------ */
+/* ------------------  Reviews ------------------ */
+.Reviews     {
+    margin-top: 60px;
+    padding-bottom: 160px;
+}
+.Reviews_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.Reviews_top-left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+.Reviews_top-left-title     {
+    color: #3A3531;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+}
+.Reviews_top-left-text    {
+    color: #7D7E7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.Reviews_top-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.Reviews_top-right-left {
+    display: flex;
+    align-items: center;
+
+}
+.Reviews_top-right-text {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; 
+}
+.Reviews_top-right-span {
+    color: #7D7E7F;
+    font-size: 16px;
+    margin-top: 4px;
+    margin-left: 3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+.Reviews_top-right-right {
+    display: flex;
+    align-items: center;
+
+
+}
+.Reviews_item {
+    /* max-width: 350px; */
+    /* width: 100%;
+    height: 246px; */
+    padding: 40px;
+    border-radius: 24px;
+    background: #F9F9F9;
+    box-shadow: 0px 1px 4px 0px rgba(14, 31, 53, 0.06);
+}
+.Reviews_item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Reviews_item-top-left-all-text {
+    color:  #3A3531;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; 
+}
+.Reviews_item-top-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.Reviews_item-top-left-all {
+}
+.stars {
+    margin-bottom: 4px;
+}
+
+.Reviews_item-mid-text {
+    overflow: hidden;
+    color:  #3A3531;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    height: 64px;
+}
+
+.Reviews_item-btn {
+    color:  #4F7A28;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+}
+.mySwiper {
+    padding-bottom: 64px!important;
+}
+.Reviews-pagination {
+    color:  #7D7E7F!important;
+    text-align: center;
+    font-family: "El Messiri";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -3px!important;
+
+}
+.swiper-wrapper-Reviews {
+    padding-bottom: 58px;
+}
+.swiper-scrollbar-Reviews {
+    opacity: 1!important;
+    max-width: 50px!important;
+    left: 50%!important;
+    bottom: 0px!important;
+    transform: translateX(-50%)!important;
+}
+.swiper-but-prev, .swiper-but-next {
+    border-radius: 50px;
+    position: absolute;
+    border: 1px solid  #7D7E7F;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+}
+.swiper-but-prev {
+    left: 37%;
+}
+.swiper-but-next {
+    right: 37%;
+
+}
+/* ------------------  /Reviews ------------------ */
+
+/* ------------------  RADIO ------------------ */
+  /* для элемента input c type="radio" */
+  .radio {
+    position: relative;
+    /* width: 24px; */
+
+  }
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom-radio+label::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 7px;
+    /* transform: translateX(-50%); */
+  }
+
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #4F7A28;
+  }
+
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #4F7A28;
+    border-color: #4F7A28;
+  }
+
+
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #4F7A28;
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #4F7A28;
+    background-color: #4F7A28;
+    
+  }
+  .custom-radio:checked+label::after {
+    background-color: #fff;
+    
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #efefe9;
+  }
+
+    .radio {
+      margin-bottom: 0.4em;
+    }
+    .radio label {
+    color: #3A3531;
+    font-family: "El Messiri";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    }
+/* ------------------  /RADIO ------------------ */
+
+
+
+/* ------------------  galery------------------ */
+.galery {
+    padding-bottom: 160px;
+}
+.galery_top  {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 24px;
+}
+.img-studia-all {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.img-studia-all-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.img-studia-item-five {
+    margin-top: -80px;
+}
+.studia-block-none {
+    display: none;
+}
+/* .fancybox__content {
+    width: 60vw!important;
+    height: 100vh!important;
+}
+.fancybox-image {
+    object-fit: cover!important;
+} */
+/* ------------------  /galery ------------------ */
+/* ------------------  modal ------------------ */
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.modal_top {
+    background-color: #fff;
+    padding:  25px 50px;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal--active {
+    display: flex;
+}
+.modal_top-close {
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    padding: 16px;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+}
+/* ------------------  /modal ------------------ */
