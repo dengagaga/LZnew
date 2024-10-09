@@ -4,11 +4,18 @@ ReviewsItemBtn.forEach(btn => {
         if (btn.textContent == 'Свернуть') {
             btn.textContent = 'Развернуть'
             const text = btn.parentElement.querySelector('.Reviews_item-mid-text')  
-            text.style.height = '64px'
+            // text.style.height = '64px'
+            text.classList.remove('height')
+            const right = btn.parentElement.querySelector('.Reviews_item-top-right');
+            right.classList.remove('Reviews_item-top-right--active')
         } else {
             const text = btn.parentElement.querySelector('.Reviews_item-mid-text')  
-            text.style.height = '83px'
+            // text.style.height = '128px'
+            text.classList.add('height')
+
             btn.textContent = 'Свернуть'
+            const right = btn.parentElement.querySelector('.Reviews_item-top-right');
+            right.classList.add('Reviews_item-top-right--active')
         }
        
     }
@@ -40,3 +47,27 @@ navBtnLocation.onclick  = () => {
 closeModal.onclick  = () => {
     modal.classList.remove('modal--active')
 }
+
+const burgerMenuAll = document.querySelector('.burger_menu-all')
+const menuList = document.querySelector('.menu-list')
+burgerMenuAll.onclick  = () => {
+    menuList.classList.toggle('menu-list--active')
+    burgerMenuAll.classList.toggle('burger_menu-all--active')
+    document.body.classList.toggle('body-scroll')
+}
+
+
+const mobilDropMenu = document.querySelector('.mobil_drop-menu')
+const navLinkMobilMenu = document.querySelector('.nav_link-mobil_menu')
+navLinkMobilMenu.onclick  = () => {
+    mobilDropMenu.classList.toggle('mobil_drop-menu--none')
+    navLinkMobilMenu.classList.toggle('footer_all-mid-link-drop_menu-rotate')
+}
+const footerDropMenu = document.querySelector('.footer_all-mid-link-drop_menu')
+const dropMenuFooterMobil = document.querySelector('.drop_menu-footer-mobil')
+
+footerDropMenu.onclick  = () => {
+    dropMenuFooterMobil.classList.toggle('drop_menu-footer-mobil--none')
+    footerDropMenu.classList.toggle('footer_all-mid-link-drop_menu-rotate')
+}
+
